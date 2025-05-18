@@ -4,8 +4,8 @@ Credit Risk Assessment and Fraud Detection Using Machine Learning
 ## 1. Background: What is Credit Risk and Fraud Detection?
 ### Credit Risk:
 This is the risk of a borrower defaulting on a loan or credit card repayment. If a bank cannot recover the money, it loses both principal and interest.</br>
-Credit Risk Assessment is about predicting how likely a person or company is to repay a loan.</br>
-Banks want to minimize this risk while still giving credit to worthy borrowers.
+- Credit Risk Assessment is about predicting how likely a person or company is to repay a loan.</br>
+- Banks want to minimize this risk while still giving credit to worthy borrowers.
 
 ### Fraud Detection:
 This focuses on identifying suspicious or fake transactions, such as:</br>
