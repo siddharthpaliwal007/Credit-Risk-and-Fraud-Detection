@@ -74,3 +74,36 @@ This dataset contains transactions made by European cardholders in September 201
 A fintech company wants to grow its lending business without increasing defaults. Your model helps them:</br>
 - Approve more loans to safe borrowers.</br>
 - Flag applicants who show fraud signals (e.g., inconsistent income history). 
+
+## 7. Final Result
+
+### Confusion Matrix
+- True Negatives (56832): Legitimate transactions correctly classified as legitimate.</br>
+- True Positives (82): Fraudulent transactions correctly identified as fraud.</br>
+- False Positives (32): Legitimate transactions wrongly flagged as fraud.</br>
+- False Negatives (16): Fraudulent transactions missed (not detected as fraud).
+
+### Classification Report
+- Precision (Fraud = 0.72): Out of all predicted frauds, 72% were actual frauds.</br>
+- Recall (Fraud = 0.84): Out of all actual frauds, 84% were correctly detected.</br>
+- F1-Score (Fraud = 0.77): Harmonic mean of precision and recall for fraud class.</br>
+- Support: Number of actual samples for each class in the test set.</br>
+- Macro Avg: Simple average of precision/recall across both classes.</br>
+- Weighted Avg: Takes into account the imbalance by giving more weight to Class 0 (since there are more of them).
+
+### ROC-AUC Score
+- The ROC-AUC score is a measure of the model's ability to distinguish between classes.</br>
+- It ranges from 0.5 (random guessing) to 1.0 (perfect classification).</br>
+- Score of 0.9181 is excellent, showing that the model can distinguish fraud from non-fraud with high confidence.
+
+## 8. Conclusion
+
+| Aspect                              | Value                                                                            |
+| ----------------------------------- | -------------------------------------------------------------------------------- |
+| **Improved fraud detection**      | The model catches 84% of fraudulent transactions.                                |
+| **Low false positive rate**       | Only 32 out of 56,864 legit transactions wrongly flagged — low operational cost. |
+| **Balanced trade-off**            | Precision and recall for fraud are well-optimized due to SMOTE and XGBoost.      |
+| **Scalability**                   | XGBoost and preprocessing techniques scale well to large financial datasets.     |
+| **Regulatory compliance & trust** | Helps build trust in AI-driven fraud systems, which is crucial in banking.       |
+
+
