@@ -30,44 +30,47 @@ This dataset contains transactions made by European cardholders in September 201
 - Amount: Transaction amount.</br>
 - Class: Target variable (0 for legitimate, 1 for fraud).
 
-# 5. Steps Involved
-A. Data Collection and Exploration
-Understand variables (numerical/categorical).
+## 4. Steps Involved
+### A. Data Collection and Exploration
+- Understand variables (numerical/categorical).</br>
+- Clean missing values.</br>
+- Understand class balance (fraud cases are often <1%).
 
-Clean missing values.
+### B. Feature Engineering
+- Transform categorical features (e.g., job type).</br>
+- Normalize numeric features (e.g., income, loan amount).</br>
+- Create new features (e.g., debt-to-income ratio).
 
-Understand class balance (fraud cases are often <1%).
+### C. Handling Imbalanced Data
+- Fraud cases or defaulters are rare (usually <5%).</br>
+- Use SMOTE (Synthetic Minority Over-sampling Technique) or under-sampling to balance data.</br>
 
-B. Feature Engineering
-Transform categorical features (e.g., job type).
+### D. Modeling
+Train ML models like:</br>
+- XGBoost (robust to imbalanced data)</br>
+- Random Forest / Decision Trees</br>
+- Logistic Regression (baseline)</br>
+Models predict:</br>
+- Probability of Default → used for credit scoring.</br>
+- Probability of Fraud → flagging for further checks.
 
-Normalize numeric features (e.g., income, loan amount).
+### E. Evaluation Metrics
+- AUC-ROC Curve: How well model separates risky from safe.</br>
+- Precision/Recall: Especially for fraud where false positives are expensive.</br>
+- Confusion Matrix: TP, TN, FP, FN analysis.
 
-Create new features (e.g., debt-to-income ratio).
+## 5. Business Outcomes
+### For Credit Risk:</br>
+- Predict and reject high-risk applicants before loan approval.</br>
+- Adjust interest rates based on predicted risk.</br>
+- Reduce Non-Performing Assets (NPAs) and increase portfolio profitability.
 
-C. Handling Imbalanced Data
-Fraud cases or defaulters are rare (usually <5%).
+### For Fraud Detection:</br>
+- Real-time alerts for suspicious activity.</br>
+- Reduce losses from fraudulent loans or applications.</br>
+- Improve compliance and audit tracking.
 
-Use SMOTE (Synthetic Minority Over-sampling Technique) or under-sampling to balance data.
-
-D. Modeling
-Train ML models like:
-
-XGBoost (robust to imbalanced data)
-
-Random Forest / Decision Trees
-
-Logistic Regression (baseline)
-
-Models predict:
-
-Probability of Default → used for credit scoring.
-
-Probability of Fraud → flagging for further checks.
-
-E. Evaluation Metrics
-AUC-ROC Curve: How well model separates risky from safe.
-
-Precision/Recall: Especially for fraud where false positives are expensive.
-
-Confusion Matrix: TP, TN, FP, FN analysis.
+## 6. Example Use Case
+A fintech company wants to grow its lending business without increasing defaults. Your model helps them:</br>
+- Approve more loans to safe borrowers.</br>
+- Flag applicants who show fraud signals (e.g., inconsistent income history). 
