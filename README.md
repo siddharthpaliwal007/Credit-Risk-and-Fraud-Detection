@@ -47,13 +47,12 @@ This dataset contains transactions made by European cardholders in September 201
 
 ### D. Modeling
 Train ML models like:</br>
-- XGBoost (robust to imbalanced data)</br>
-- Random Forest / Decision Trees</br>
-- Logistic Regression (baseline)</br>
-
-* Models predict:</br>
-- Probability of Default → used for credit scoring.</br>
-- Probability of Fraud → flagging for further checks.
+  - XGBoost (robust to imbalanced data)</br>
+  - Random Forest / Decision Trees</br>
+  - Logistic Regression (baseline)</br>
+ Models predict:</br>
+  - Probability of Default → used for credit scoring.</br>
+  - Probability of Fraud → flagging for further checks.
 
 ### E. Evaluation Metrics
 - AUC-ROC Curve: How well model separates risky from safe.</br>
