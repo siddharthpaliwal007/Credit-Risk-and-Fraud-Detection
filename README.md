@@ -50,7 +50,8 @@ Train ML models like:</br>
 - XGBoost (robust to imbalanced data)</br>
 - Random Forest / Decision Trees</br>
 - Logistic Regression (baseline)</br>
-Models predict:</br>
+
+* Models predict:</br>
 - Probability of Default → used for credit scoring.</br>
 - Probability of Fraud → flagging for further checks.
 
