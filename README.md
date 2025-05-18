@@ -9,15 +9,15 @@ This is the risk of a borrower defaulting on a loan or credit card repayment. If
 
 ### Fraud Detection:
 This focuses on identifying suspicious or fake transactions, such as:</br>
-Identity fraud (e.g., fake users)</br>
-Synthetic fraud (real + fake data mix)</br>
-Stolen card usage</br>
-Rapid fire transactions or behavior anomalies
+- Identity fraud (e.g., fake users)</br>
+- Synthetic fraud (real + fake data mix)</br>
+- Stolen card usage</br>
+- Rapid fire transactions or behavior anomalies
 
 ## 2. Problem Statement
 Design and deploy Machine Learning models to:</br>
-Predict the probability that a user might default (credit risk).</br>
-Detect fraudulent applications or transactions.
+- Predict the probability that a user might default (credit risk).</br>
+- Detect fraudulent applications or transactions.
 
 ## 3. Dataset Overview
 ### Source: 
@@ -25,10 +25,10 @@ Kaggle - Credit Card Fraud Detection Dataset</br>
 ### Description: 
 This dataset contains transactions made by European cardholders in September 2013. It includes 284,807 transactions, with 492 labeled as fraudulent.</br>
 ### Features:
-Time: Seconds elapsed between each transaction and the first transaction in the dataset.</br>
-V1 to V28: Result of a PCA transformation to protect confidentiality.</br>
-Amount: Transaction amount.</br>
-Class: Target variable (0 for legitimate, 1 for fraud).
+- Time: Seconds elapsed between each transaction and the first transaction in the dataset.</br>
+- V1 to V28: Result of a PCA transformation to protect confidentiality.</br>
+- Amount: Transaction amount.</br>
+- Class: Target variable (0 for legitimate, 1 for fraud).
 
 # 5. Steps Involved
 A. Data Collection and Exploration
